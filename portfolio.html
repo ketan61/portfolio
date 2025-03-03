@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketan Singh's Portfolio</title>
+    <link rel="shortcut icon" href="fevicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="portfolio.css">
+    <script>
+        function toggleSection(sectionId) {
+            var sections = document.getElementsByClassName('content-section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        window.onload = function() {
+            var sections = document.getElementsByClassName('content-section');
+            for (var i = 1; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>Ketan Singh</h1>
+                    <p>Highly motivated and skilled fresher in Computer Science with a passion for developing innovative software solutions.</p>
+                </div>
+                <!-- Photo Section -->
+                <div class="photo-container">
+                    <img src="PICC.jpg" alt="Ketan Singh">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about" onclick="toggleSection('about')">About Me</a></li>
+            <li><a href="#experience" onclick="toggleSection('experience')">Experience</a></li>
+            <li><a href="#education" onclick="toggleSection('education')">Education</a></li>
+            <li><a href="#skills" onclick="toggleSection('skills')">Skills</a></li>
+            <li><a href="#certifications" onclick="toggleSection('certifications')">Certifications</a></li>
+            <li><a href="#projects" onclick="toggleSection('projects')">Projects</a></li>
+            <li><a href="#languages" onclick="toggleSection('languages')">Languages</a></li>
+            <li><a href="#personal" onclick="toggleSection('personal')">Personal</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="content-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Correspondence Address: Diggi Chauraha, Near Ajanta Lodge, Banda, UP – 210001</p>
+                <p>Mobile: +91-9473981282 | E-mail: driftking6111@gmail.com</p>
+            </div>
+        </section>
+
+        <section id="experience" class="content-section">
+            <div class="container">
+                <h2>Work Experience</h2>
+                <div class="experience-item">
+                    <h3>Web Development Intern</h3>
+                    <p>Numeric Infosystem Pvt. Ltd. | Apr 2021 – Mar 2021</p>
+                    <ul>
+                        <li>Collaborated with the quality assurance team to verify the correct implementation of software development changes.</li>
+                        <li>Worked independently to design, develop, and test code.</li>
+                        <li>Gained experience in building projects using HTML, CSS, and JavaScript.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="content-section">
+            <div class="container">
+                <h2>Education</h2>
+                <ul>
+                    <li>Bachelor of Technology in Computer Science | ITM, Gwalior | Graduated: 2023 | 82.10%</li>
+                    <li>Senior Secondary | St. Xavier High School, Banda | Graduated: 2019 | 78.40%</li>
+                    <li>Higher Secondary | VMPS, Banda | Graduated: 2016 | 95.00%</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="content-section">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Programming Languages: C, C++, JavaScript, Python</li>
+                    <li>Markup & Stylesheet Languages: HTML, CSS</li>
+                    <li>Software: Microsoft Word, Microsoft PowerPoint, Microsoft Excel</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="certifications" class="content-section">
+            <div class="container">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Object-Oriented Programming with C++ | ITMGOI | 2020</li>
+                    <li>Python | Numeric Infosystem Pvt. Ltd. | 2021</li>
+                    <li>Machine Learning | Verzeo | 2021</li>
+                    <li>Python | CodeChef | 2023</li>
+                    <li>BEC Preliminary | Cambridge Assessment English | 2022</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section">
+            <div class="container">
+                <h2>Projects</h2>
+                <ul>
+                    <li>E-Commerce Site of Electronics Gadgets: Developed using Node.js, MongoDB, HTML, CSS, Bootstrap.</li>
+                    <li>Car Rental System: Developed using HTML, CSS, JavaScript; backend with MySQL.</li>
+                    <li>Library Management System: Developed using HTML, CSS, JavaScript, PHP.</li>
+                    <li>Tic-Tac-Toe Game Using Machine Learning: Developed using Python libraries and ML concepts.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="languages" class="content-section">
+            <div class="container">
+                <h2>Language Proficiency</h2>
+                <ul>
+                    <li>English: Proficient</li>
+                    <li>Hindi: Proficient</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="personal" class="content-section">
+            <div class="container">
+                <h2>Personal Details</h2>
+                <ul>
+                    <li>Father's Name: Mr. Karuna Shankar Singh</li>
+                    <li>Date of Birth: November 06, 2000</li>
+                    <li>Gender: Male</li>
+                    <li>Marital Status: Unmarried</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
